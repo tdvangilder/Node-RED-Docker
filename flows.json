@@ -31,7 +31,7 @@
         "y": 100,
         "wires": [
             [
-                "83d60ea6f2d7034d"
+                "018d42271dcc8df8"
             ]
         ]
     },
@@ -50,5 +50,32 @@
         "x": 340,
         "y": 100,
         "wires": []
+    },
+    {
+        "id": "018d42271dcc8df8",
+        "type": "change",
+        "z": "3af82246.3634ae",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "83d60ea6f2d7034d"
+            ]
+        ]
     }
 ]
