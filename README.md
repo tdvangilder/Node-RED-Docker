@@ -36,3 +36,17 @@ app.use('/live', health.LivenessEndpoint(healthcheck));
 app.use('/ready', health.ReadinessEndpoint(healthcheck));
 app.use('/health', health.HealthEndpoint(healthcheck));
 ```
+
+## My Notes
+
+To navigate to project root
+
+``` cmd
+CD C:\Dev\PersonalProjects\NRdata
+```
+
+To run build an run the container
+
+``` cmd
+docker run -itd -p 1880:1880 -v "$(pwd):/data" -e NODE_RED_ENABLE_PROJECTS=true --name mynodered nodered/node-red
+```
